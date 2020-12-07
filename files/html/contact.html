@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <title>Workshops and webinars</title>
+</head>
+
+<body id="bg-img">
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="potrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link">Work</a>
+        </li>
+        <li class="nav-item current">
+          <a href="contact.html" class="nav-link">Registration</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="register">
+    <h1 class="lg-heading">
+      Workshops & <span class="text-secondary">Webinars</span>
+    </h1>
+    <h2 class="sm-heading">
+      Kindly register to my newsletter to get notifications about upcoming
+      workshops and webinars.
+    </h2>
+    <div class="box">
+      <div class="container">
+        <div class="regform">
+          <h2>Registration Form</h2>
+        </div>
+        <div class="regbox">
+          <form method="POST" action="mailto:riteshkumar.dp@somaiya.edu" onsubmit="alert('Registration Successful')">
+            <div id="name">
+              <h3 class="name">Name</h3>
+              <input type="text" class="firstname" placeholder="First Name" name="name" required />
+              <input type="text" class="lastname" placeholder="Last Name" name="name" required />
+            </div>
+            <div id="email">
+              <h3 class="name">Email-ID</h3>
+              <input type="email" class="email" placeholder="Enter a valid Email" name="email" required />
+            </div>
+            <div id="phone">
+              <h3 class="name">Phone no.</h3>
+              <input type="tel" class="phone" placeholder="Enter your phone number" name="phone" pattern="[0-9]{10}"
+                oninvalid="this.setCustomValidity('Phone number should be of 10 digits')"
+                onchange="try{setCustomValidity('')}catch(e){}" required />
+            </div>
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <h3 class="events">Upcoming Events</h3>
+        <ul>
+          <li>
+            <h3 class="sm-heading">Basics of Drawing</h3>
+          </li>
+          <li>
+            <h3 class="sm2-heading">Roadmap for perfect Digital Arts</h3>
+          </li>
+          <li>
+            <h3 class="sm-heading">Future scopes in Architecture</h3>
+          </li>
+          <li>
+            <h3 class="sm2-heading">Relation between art and photography</h3>
+          </li>
+          <br />
+          and many mores.....
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer">Copyright &copy Ashutosh Gaware, 2020.</footer>
+
+  <script src="../Js/main.js"></script>
+</body>
+
+</html>
